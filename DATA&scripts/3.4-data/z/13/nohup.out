@@ -1,0 +1,235 @@
+LAMMPS (2 Aug 2023 - Update 3)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+Reading data file ...
+  orthogonal box = (-100 -100 -2.3312515) to (100 100 46.166171)
+  3 by 4 by 1 MPI processor grid
+  reading atoms ...
+  1480 atoms
+  read_data CPU = 0.005 seconds
+Replication is creating a 1x1x13 = 13 times larger system...
+  orthogonal box = (-100 -100 -2.3312515) to (100 100 628.13525)
+  1 by 2 by 6 MPI processor grid
+  19240 atoms
+  replicate CPU = 0.001 seconds
+System init for write_data ...
+WARNING: Communication cutoff is 0.0. No ghost atoms will be generated. Atoms may get lost. (src/comm_brick.cpp:210)
+Reading airebo potential file CH.airebo with DATE: 2011-10-25
+Reading airebo potential file CH.airebo with DATE: 2011-10-25
+Reading airebo potential file CH.airebo with DATE: 2011-10-25
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 13.2
+  ghost atom cutoff = 13.2
+  binsize = 6.6, bins = 31 31 96
+  6 neighbor lists, perpetual/occasional/extra = 6 0 0
+  (1) pair airebo, perpetual, skip from (5)
+      attributes: full, newton on, ghost
+      pair build: skip/ghost
+      stencil: none
+      bin: none
+  (2) pair airebo, perpetual, skip from (5)
+      attributes: full, newton on, ghost
+      pair build: skip/ghost
+      stencil: none
+      bin: none
+  (3) pair airebo, perpetual, skip from (5)
+      attributes: full, newton on, ghost
+      pair build: skip/ghost
+      stencil: none
+      bin: none
+  (4) pair lj/cut, perpetual, skip from (6)
+      attributes: half, newton on, cut 13
+      pair build: skip
+      stencil: none
+      bin: none
+  (5) neighbor class addition, perpetual
+      attributes: full, newton on, ghost
+      pair build: full/bin/ghost
+      stencil: full/ghost/bin/3d
+      bin: standard
+  (6) neighbor class addition, perpetual
+      attributes: half, newton on, cut 13
+      pair build: half/bin/atomonly/newton
+      stencil: half/bin/3d
+      bin: standard
+Setting up sd style minimization ...
+  Unit style    : metal
+  Current step  : 0
+Per MPI rank memory allocation (min/avg/max) = 15.25 | 15.26 | 15.26 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press     
+         0   0             -139633.21      0             -139633.21      378.42796    
+         4   0             -139978.64      0             -139978.64      50.287364    
+Loop time of 0.204421 on 12 procs for 4 steps with 19240 atoms
+
+99.0% CPU use with 12 MPI tasks x 1 OpenMP threads
+
+Minimization stats:
+  Stopping criterion = energy tolerance
+  Energy initial, next-to-last, final = 
+     -139633.205948406  -139970.098366192  -139978.637294366
+  Force two-norm initial, final = 192.28083 30.80752
+  Force max component initial, final = 3.434546 0.53009031
+  Final line search alpha, max atom move = 0.13584282 0.072008965
+  Iterations, force evaluations = 4 8
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0.19122    | 0.19567    | 0.20188    |   0.6 | 95.72
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0.0008326  | 0.0053697  | 0.011819   |   4.4 |  2.63
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 0.00338    |            |       |  1.65
+
+Nlocal:        1603.33 ave        1652 max        1551 min
+Histogram: 2 4 0 0 0 0 0 0 2 4
+Nghost:         2409.5 ave        2465 max        2350 min
+Histogram: 2 2 2 0 0 0 0 1 2 3
+Neighs:              0 ave           0 max           0 min
+Histogram: 12 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 4
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 15.88 | 15.88 | 15.88 Mbytes
+   Step          Temp          E_pair         E_mol          TotEng         Press          Volume    
+         4   300           -139978.64      0             -139232.59      81.885792      25218660     
+Loop time of 2.56497e-05 on 12 procs for 0 steps with 19240 atoms
+
+99.4% CPU use with 12 MPI tasks x 1 OpenMP threads
+
+MPI task timing breakdown:
+Section |  min time  |  avg time  |  max time  |%varavg| %total
+---------------------------------------------------------------
+Pair    | 0          | 0          | 0          |   0.0 |  0.00
+Neigh   | 0          | 0          | 0          |   0.0 |  0.00
+Comm    | 0          | 0          | 0          |   0.0 |  0.00
+Output  | 0          | 0          | 0          |   0.0 |  0.00
+Modify  | 0          | 0          | 0          |   0.0 |  0.00
+Other   |            | 2.565e-05  |            |       |100.00
+
+Nlocal:        1603.33 ave        1612 max        1592 min
+Histogram: 2 0 2 0 0 0 2 1 2 3
+Nghost:        2408.83 ave        2425 max        2390 min
+Histogram: 1 0 3 0 1 2 1 0 2 2
+Neighs:              0 ave           0 max           0 min
+Histogram: 12 0 0 0 0 0 0 0 0 0
+
+Total # of neighbors = 0
+Ave neighs/atom = 0
+Neighbor list builds = 0
+Dangerous builds = 0
+WARNING: Dump 2 includes no atom IDs and is not sorted by ID. This may complicate post-processing tasks or visualization (src/dump.cpp:221)
+Setting up Verlet run ...
+  Unit style    : metal
+  Current step  : 0
+  Time step     : 0.001
+Per MPI rank memory allocation (min/avg/max) = 17.38 | 17.38 | 17.38 Mbytes
+   Step         PotEng         KinEng         TotEng           Lx             Ly             Lz      
+         0  -139978.64      746.05078     -139232.59      200            200            630.4665     
+       100  -139561.46      379.06455     -139182.4       200.00286      199.98878      630.78173    
+       200  -139595.49      480.41068     -139115.08      200.00918      199.96879      631.09697    
+       300  -139531.98      496.43999     -139035.54      200.03793      199.95769      631.4122     
+       400  -139503.04      553.98188     -138949.06      200.05298      199.92803      631.72743    
+       500  -139466.36      607.6675      -138858.69      200.08742      199.91457      632.04267    
+       600  -139432.54      664.98756     -138767.55      200.13118      199.90193      632.3579     
+       700  -139390.21      707.01499     -138683.19      200.14904      199.86277      632.67313    
+       800  -139335.46      724.9537      -138610.51      200.20088      199.83579      632.98836    
+       900  -139323.34      763.2032      -138560.14      200.23406      199.78746      633.3036     
+      1000  -139299.43      748.83466     -138550.6       200.26188      199.73794      633.61883    
+      1100  -139328.63      749.99772     -138578.63      200.30906      199.70232      633.93406    
+      1200  -139338.78      732.34392     -138606.44      200.32245      199.66283      634.2493     
+      1300  -139357.62      746.1726      -138611.44      200.33835      199.63937      634.56453    
+      1400  -139340.71      749.91018     -138590.8       200.35019      199.62941      634.87976    
+      1500  -139314.6       753.87546     -138560.73      200.32834      199.62197      635.195      
+      1600  -139306.15      767.65611     -138538.5       200.31662      199.63753      635.51023    
+      1700  -139280.95      752.16863     -138528.78      200.29042      199.66589      635.82546    
+      1800  -139298.65      758.65086     -138540         200.26042      199.70462      636.1407     
+      1900  -139299.74      733.54842     -138566.19      200.23463      199.75802      636.45593    
+      2000  -139322.74      734.80012     -138587.94      200.17389      199.80461      636.77116    
+      2100  -139304.41      716.49498     -138587.91      200.12903      199.86479      637.0864     
+      2200  -139292.74      736.52254     -138556.22      200.07742      199.91817      637.40163    
+      2300  -139271.28      751.59471     -138519.69      200.0229       199.96458      637.71686    
+      2400  -139268.16      766.08206     -138502.08      199.98659      200.00753      638.0321     
+      2500  -139264.66      758.12917     -138506.53      199.94989      200.0353       638.34733    
+      2600  -139272.72      751.63813     -138521.08      199.91958      200.0526       638.66256    
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 0 PID 1009271 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 1 PID 1009272 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 2 PID 1009273 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 3 PID 1009274 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 4 PID 1009275 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 5 PID 1009276 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 6 PID 1009277 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 7 PID 1009278 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 8 PID 1009279 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 9 PID 1009280 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 10 PID 1009281 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   RANK 11 PID 1009282 RUNNING AT amax
+=   KILLED BY SIGNAL: 15 (Terminated)
+===================================================================================

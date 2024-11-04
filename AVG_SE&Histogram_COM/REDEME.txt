@@ -1,0 +1,15 @@
+10.249.24.254:/home/amax/taotao/L100-------------------100 sample data locations of linear chain structure
+10.249.24.250:/home/amax/taotao/z100-------------------100 sample data locations of zigzag chain structure
+10.249.24.255:/home/amax/taotao/H100-------------------100 sample data locations of single helix chain structure
+
+There are three files in the three directories above:
+h.py-------------------Histogram data processing and drawing program
+AVG_SE.py--------------Mean and error band data processing and plotting program
+main_AVG_SE.py---------Call the main function of AVG_SE.py
+main_h.py--------------Call the main function of h.py
+
+Finally, export the merged data to the local machine to draw the average error band graph and histogram of the three structures.
+
+The programs and files used are in the following directories：
+
+AVG_SE&Histogram_COM
